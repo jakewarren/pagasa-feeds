@@ -18,19 +18,11 @@ from xml.etree.ElementTree import (
 )
 
 
-++ b/generate_rss.py
-@@
--from email.utils import format_datetime
-from email.utils import format_datetime
-from html import escape, unescape
-@@
  def safe_fromstring(html_content):
      """Safely parse HTML content, handling malformed HTML gracefully."""
      try:
          return fromstring(f"<div>{html_content}</div>")
      except ParseError:
--        # Fallback: escape the content and treat as plain text
--        escaped_content = escape(html_content)
         # Fallback: preserve visual line breaks and avoid XML entity errors
         # 1) Convert HTML named entities to Unicode to sidestep XML named entity issues (e.g., &nbsp;)
         text = unescape(html_content)
