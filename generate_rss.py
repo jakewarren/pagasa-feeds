@@ -2,11 +2,12 @@
 """Generate RSS feed for PAGASA regional advisories."""
 import argparse
 import re
-from datetime import datetime
+from datetime import datetime, timezone
 
 import requests
 from bs4 import BeautifulSoup
-from xml.etree.ElementTree import Element, ElementTree, SubElement
+import xml.dom.minidom
+from xml.etree.ElementTree import Element, SubElement, tostring
 
 
 def add_items(soup, channel, div_id, category, slug):
@@ -17,8 +18,10 @@ def add_items(soup, channel, div_id, category, slug):
         for link in div.find_all("a"):
             href = link.get("href")
             title = link.get_text(strip=True)
-            spans = [s.get_text(strip=True) for s in link.find_all("span")]
-            description = " ".join(spans)
+            spans = [
+                s.get_text(separator="\n", strip=True) for s in link.find_all("span")
+            ]
+            description = "\n".join(spans)
             item = SubElement(channel, "item")
             SubElement(item, "title").text = f"{category}: {title}" if title else category
             if href:
@@ -28,7 +31,7 @@ def add_items(soup, channel, div_id, category, slug):
             SubElement(item, "category").text = category
     else:
         for entry in div.find_all("div"):
-            text = entry.get_text(strip=True)
+            text = entry.get_text(separator="\n", strip=True)
             if not text:
                 continue
             match = re.search(r"No\.\s*(\d+)", text, re.IGNORECASE)
@@ -55,7 +58,7 @@ def main(slug: str) -> None:
     SubElement(channel, "description").text = (
         f"Aggregated rainfall, thunderstorm, and special forecasts from PAGASA {slug.upper()}"
     )
-    SubElement(channel, "lastBuildDate").text = datetime.utcnow().strftime(
+    SubElement(channel, "lastBuildDate").text = datetime.now(timezone.utc).strftime(
         "%a, %d %b %Y %H:%M:%S GMT"
     )
 
@@ -63,8 +66,12 @@ def main(slug: str) -> None:
     add_items(soup, channel, "thunderstorms", "Thunderstorm Advisory", slug)
     add_items(soup, channel, "special-forecasts", "Special Forecast", slug)
 
-    tree = ElementTree(rss)
-    tree.write(f"{slug}.rss", encoding="utf-8", xml_declaration=True)
+    xml_bytes = tostring(rss, encoding="utf-8")
+    pretty_xml = xml.dom.minidom.parseString(xml_bytes).toprettyxml(
+        indent="  ", encoding="utf-8"
+    )
+    with open(f"{slug}.rss", "wb") as f:
+        f.write(pretty_xml)
 
 
 if __name__ == "__main__":
