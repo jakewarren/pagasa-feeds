@@ -18,10 +18,8 @@ def add_items(soup, channel, div_id, category, slug):
         for link in div.find_all("a"):
             href = link.get("href")
             title = link.get_text(strip=True)
-            spans = [
-                s.get_text(separator="\n", strip=True) for s in link.find_all("span")
-            ]
-            description = "\n".join(spans)
+            spans = [s.get_text(strip=True) for s in link.find_all("span")]
+            description = "<br />".join(spans)
             item = SubElement(channel, "item")
             SubElement(item, "title").text = f"{category}: {title}" if title else category
             if href:
@@ -31,17 +29,17 @@ def add_items(soup, channel, div_id, category, slug):
             SubElement(item, "category").text = category
     else:
         for entry in div.find_all("div"):
-            text = entry.get_text(separator="\n", strip=True)
-            if not text:
+            html = entry.decode_contents().replace("\n", "")
+            if not html.strip():
                 continue
-            match = re.search(r"No\.\s*(\d+)", text, re.IGNORECASE)
+            match = re.search(r"No\.\s*(\d+)", html, re.IGNORECASE)
             number = match.group(1) if match else None
             title = (
                 f"{category} No. {number} #{slug.upper()}" if number else category
             )
             item = SubElement(channel, "item")
             SubElement(item, "title").text = title
-            SubElement(item, "description").text = text
+            SubElement(item, "description").text = html
             SubElement(item, "category").text = category
 
 
@@ -67,9 +65,13 @@ def main(slug: str) -> None:
     add_items(soup, channel, "special-forecasts", "Special Forecast", slug)
 
     xml_bytes = tostring(rss, encoding="utf-8")
-    pretty_xml = xml.dom.minidom.parseString(xml_bytes).toprettyxml(
-        indent="  ", encoding="utf-8"
-    )
+    dom = xml.dom.minidom.parseString(xml_bytes)
+    for desc in dom.getElementsByTagName("description"):
+        if desc.firstChild:
+            text = desc.firstChild.data
+            desc.removeChild(desc.firstChild)
+            desc.appendChild(dom.createCDATASection(text))
+    pretty_xml = dom.toprettyxml(indent="  ", encoding="utf-8")
     with open(f"{slug}.rss", "wb") as f:
         f.write(pretty_xml)
 
