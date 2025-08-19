@@ -17,11 +17,7 @@ from xml.etree.ElementTree import (
     ParseError,
 )
 
-def safe_fromstring(html_content):
-     """Safely parse HTML content, handling malformed HTML gracefully."""
-     try:
-         return fromstring(f"<div>{html_content}</div>")
-     except ParseError:
+
 def safe_fromstring(html_content):
     """Safely parse HTML content, handling malformed HTML gracefully."""
     try:
