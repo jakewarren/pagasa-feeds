@@ -18,15 +18,33 @@ from xml.etree.ElementTree import (
 )
 
 
-def safe_fromstring(html_content):
-    """Safely parse HTML content, handling malformed HTML gracefully."""
-    try:
-        return fromstring(f"<div>{html_content}</div>")
-    except ParseError:
-        # Fallback: escape the content and treat as plain text
-        escaped_content = escape(html_content)
-        return fromstring(f"<div>{escaped_content}</div>")
-
+++ b/generate_rss.py
+@@
+-from email.utils import format_datetime
+from email.utils import format_datetime
+from html import escape, unescape
+@@
+ def safe_fromstring(html_content):
+     """Safely parse HTML content, handling malformed HTML gracefully."""
+     try:
+         return fromstring(f"<div>{html_content}</div>")
+     except ParseError:
+-        # Fallback: escape the content and treat as plain text
+-        escaped_content = escape(html_content)
+        # Fallback: preserve visual line breaks and avoid XML entity errors
+        # 1) Convert HTML named entities to Unicode to sidestep XML named entity issues (e.g., &nbsp;)
+        text = unescape(html_content)
+        # 2) Split on <br> variants and build mixed content safely without XML parsing
+        parts = re.split(r'(?i)<br\s*/?>', text)
+        root = Element("div")
+        if parts:
+            root.text = parts[0]
+            for piece in parts[1:]:
+                SubElement(root, "br").tail = piece
+        else:
+            # As a last resort, escape the text but keep it renderable
+            root.text = text
+        return root
 
 def normalize_html(html):
     """Normalize HTML content for consistent formatting."""
