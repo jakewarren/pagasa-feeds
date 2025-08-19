@@ -3,11 +3,17 @@
 import argparse
 import re
 from datetime import datetime, timezone
+from email.utils import format_datetime
 
 import requests
 from bs4 import BeautifulSoup
-import xml.dom.minidom
-from xml.etree.ElementTree import Element, SubElement, tostring
+from xml.etree.ElementTree import (
+    Element,
+    SubElement,
+    ElementTree,
+    fromstring,
+    indent,
+)
 
 
 def add_items(soup, channel, div_id, category, slug):
@@ -19,17 +25,27 @@ def add_items(soup, channel, div_id, category, slug):
             href = link.get("href")
             title = link.get_text(strip=True)
             spans = [s.get_text(strip=True) for s in link.find_all("span")]
-            description = "<br />".join(spans)
+            parts = [p for p in spans if p]
+            html = "<br />".join(parts) or link.get_text(
+                separator="<br />", strip=True
+            )
             item = SubElement(channel, "item")
             SubElement(item, "title").text = f"{category}: {title}" if title else category
             if href:
                 SubElement(item, "link").text = href
-            if description:
-                SubElement(item, "description").text = description
+            if html:
+                desc = SubElement(item, "description")
+                frag = fromstring(f"<div>{html}</div>")
+                desc.text = frag.text
+                for child in list(frag):
+                    desc.append(child)
             SubElement(item, "category").text = category
     else:
         for entry in div.find_all("div"):
             html = entry.decode_contents().replace("\n", "")
+            html = re.sub(r"<br\s*/?>", "<br />", html, flags=re.IGNORECASE).replace(
+                "</br>", ""
+            )
             if not html.strip():
                 continue
             match = re.search(r"No\.\s*(\d+)", html, re.IGNORECASE)
@@ -39,7 +55,11 @@ def add_items(soup, channel, div_id, category, slug):
             )
             item = SubElement(channel, "item")
             SubElement(item, "title").text = title
-            SubElement(item, "description").text = html
+            desc = SubElement(item, "description")
+            frag = fromstring(f"<div>{html}</div>")
+            desc.text = frag.text
+            for child in list(frag):
+                desc.append(child)
             SubElement(item, "category").text = category
 
 
@@ -56,24 +76,17 @@ def main(slug: str) -> None:
     SubElement(channel, "description").text = (
         f"Aggregated rainfall, thunderstorm, and special forecasts from PAGASA {slug.upper()}"
     )
-    SubElement(channel, "lastBuildDate").text = datetime.now(timezone.utc).strftime(
-        "%a, %d %b %Y %H:%M:%S GMT"
+    SubElement(channel, "lastBuildDate").text = format_datetime(
+        datetime.now(timezone.utc)
     )
 
     add_items(soup, channel, "rainfalls", "Rainfall Advisory", slug)
     add_items(soup, channel, "thunderstorms", "Thunderstorm Advisory", slug)
     add_items(soup, channel, "special-forecasts", "Special Forecast", slug)
 
-    xml_bytes = tostring(rss, encoding="utf-8")
-    dom = xml.dom.minidom.parseString(xml_bytes)
-    for desc in dom.getElementsByTagName("description"):
-        if desc.firstChild:
-            text = desc.firstChild.data
-            desc.removeChild(desc.firstChild)
-            desc.appendChild(dom.createCDATASection(text))
-    pretty_xml = dom.toprettyxml(indent="  ", encoding="utf-8")
-    with open(f"{slug}.rss", "wb") as f:
-        f.write(pretty_xml)
+    indent(rss, space="  ")
+    tree = ElementTree(rss)
+    tree.write(f"{slug}.rss", encoding="utf-8", xml_declaration=True)
 
 
 if __name__ == "__main__":
