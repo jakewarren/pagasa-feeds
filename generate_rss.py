@@ -4,7 +4,7 @@ import argparse
 import re
 from datetime import datetime, timezone
 from email.utils import format_datetime
-from html import escape
+from html import escape, unescape
 
 import requests
 from bs4 import BeautifulSoup
@@ -17,12 +17,16 @@ from xml.etree.ElementTree import (
     ParseError,
 )
 
-
- def safe_fromstring(html_content):
+def safe_fromstring(html_content):
      """Safely parse HTML content, handling malformed HTML gracefully."""
      try:
          return fromstring(f"<div>{html_content}</div>")
      except ParseError:
+def safe_fromstring(html_content):
+    """Safely parse HTML content, handling malformed HTML gracefully."""
+    try:
+        return fromstring(f"<div>{html_content}</div>")
+    except ParseError:
         # Fallback: preserve visual line breaks and avoid XML entity errors
         # 1) Convert HTML named entities to Unicode to sidestep XML named entity issues (e.g., &nbsp;)
         text = unescape(html_content)
