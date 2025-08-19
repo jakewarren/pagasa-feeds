@@ -4,39 +4,12 @@ import argparse
 import re
 from datetime import datetime, timezone
 from email.utils import format_datetime
-from html import escape, unescape
+from html import unescape
 
 import requests
 from bs4 import BeautifulSoup
-from xml.etree.ElementTree import (
-    Element,
-    SubElement,
-    ElementTree,
-    fromstring,
-    indent,
-    ParseError,
-)
+from lxml import etree as ET
 
-
-def safe_fromstring(html_content):
-    """Safely parse HTML content, handling malformed HTML gracefully."""
-    try:
-        return fromstring(f"<div>{html_content}</div>")
-    except ParseError:
-        # Fallback: preserve visual line breaks and avoid XML entity errors
-        # 1) Convert HTML named entities to Unicode to sidestep XML named entity issues (e.g., &nbsp;)
-        text = unescape(html_content)
-        # 2) Split on <br> variants and build mixed content safely without XML parsing
-        parts = re.split(r'(?i)<br\s*/?>', text)
-        root = Element("div")
-        if parts:
-            root.text = parts[0]
-            for piece in parts[1:]:
-                SubElement(root, "br").tail = piece
-        else:
-            # As a last resort, escape the text but keep it renderable
-            root.text = text
-        return root
 
 def normalize_html(html):
     """Normalize HTML content for consistent formatting."""
@@ -77,27 +50,21 @@ def add_items(soup, channel, div_id, category, slug):
                 html = link.get_text(separator="<br />", strip=True)
             
             # Create RSS item
-            item = SubElement(channel, "item")
-            SubElement(item, "title").text = f"{category}: {title}" if title else category
+            item = ET.SubElement(channel, "item")
+            ET.SubElement(item, "title").text = f"{category}: {title}" if title else category
             
             if href:
                 # Ensure href is absolute URL
                 if href.startswith('/'):
                     href = f"https://www.pagasa.dost.gov.ph{href}"
-                SubElement(item, "link").text = href
+                ET.SubElement(item, "link").text = href
             
             if html:
-                desc = SubElement(item, "description")
-                try:
-                    frag = safe_fromstring(html)
-                    desc.text = frag.text or ""
-                    for child in list(frag):
-                        desc.append(child)
-                except Exception:
-                    # Ultimate fallback: plain text
-                    desc.text = BeautifulSoup(html, 'html.parser').get_text()
+                html = unescape(html)
+                desc = ET.SubElement(item, "description")
+                desc.text = ET.CDATA(html)
                     
-            SubElement(item, "category").text = category
+            ET.SubElement(item, "category").text = category
             
     else:
         for entry in div.find_all("div"):
@@ -118,20 +85,14 @@ def add_items(soup, channel, div_id, category, slug):
                 title = f"{category} #{slug.upper()}"
             
             # Create RSS item
-            item = SubElement(channel, "item")
-            SubElement(item, "title").text = title
+            item = ET.SubElement(channel, "item")
+            ET.SubElement(item, "title").text = title
             
-            desc = SubElement(item, "description")
-            try:
-                frag = safe_fromstring(html)
-                desc.text = frag.text or ""
-                for child in list(frag):
-                    desc.append(child)
-            except Exception:
-                # Ultimate fallback: plain text
-                desc.text = BeautifulSoup(html, 'html.parser').get_text()
+            html = unescape(html)
+            desc = ET.SubElement(item, "description")
+            desc.text = ET.CDATA(html)
                 
-            SubElement(item, "category").text = category
+            ET.SubElement(item, "category").text = category
 
 
 def main(slug: str) -> None:
@@ -148,14 +109,14 @@ def main(slug: str) -> None:
     soup = BeautifulSoup(response.content, "html.parser")
 
     # Create RSS structure
-    rss = Element("rss", version="2.0")
-    channel = SubElement(rss, "channel")
-    SubElement(channel, "title").text = f"PAGASA {slug.upper()} Advisories"
-    SubElement(channel, "link").text = url
-    SubElement(channel, "description").text = (
+    rss = ET.Element("rss", version="2.0")
+    channel = ET.SubElement(rss, "channel")
+    ET.SubElement(channel, "title").text = f"PAGASA {slug.upper()} Advisories"
+    ET.SubElement(channel, "link").text = url
+    ET.SubElement(channel, "description").text = (
         f"Aggregated rainfall, thunderstorm, and special forecasts from PAGASA {slug.upper()}"
     )
-    SubElement(channel, "lastBuildDate").text = format_datetime(
+    ET.SubElement(channel, "lastBuildDate").text = format_datetime(
         datetime.now(timezone.utc)
     )
 
@@ -166,8 +127,8 @@ def main(slug: str) -> None:
 
     # Write RSS file
     try:
-        indent(rss, space="  ")
-        tree = ElementTree(rss)
+        ET.indent(rss, space="  ")
+        tree = ET.ElementTree(rss)
         tree.write(f"{slug}.rss", encoding="utf-8", xml_declaration=True)
         print(f"Successfully generated {slug}.rss")
     except Exception as e:
