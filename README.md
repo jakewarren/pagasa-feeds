@@ -4,3 +4,8 @@ This repository publishes RSS feeds built from advisories on the [PAGASA](https:
 
 Each feed corresponds to a PAGASA regional slug (for example, `visprsd` for the Visayas). GitHub Actions periodically scrape the corresponding regional page and update the RSS file under the `rss-feed` branch so subscribers can stay informed about the latest advisories.
 
+## Feeds
+ 
+| Region  | Feed Link |
+|---------|-----------|
+| Visayas |  [![RSS](https://img.shields.io/badge/rss-F88900?style=for-the-badge&logo=rss&logoColor=white)](https://jakewarren.github.io/pagasa-feeds/visprsd.rss)    |
