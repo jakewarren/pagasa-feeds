@@ -5,8 +5,13 @@ on:
     - cron: "0 * * * *" # Runs every hour
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   generate_rss:
+    permissions:
+      contents: write  # for peaceiris/actions-gh-pages to push pages branch
     runs-on: ubuntu-latest
     steps:
       - name: Harden Runner
@@ -15,10 +20,10 @@ jobs:
           egress-policy: audit
 
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
           python-version: '3.x'
 
@@ -31,7 +36,7 @@ jobs:
           python generate_rss.py ncrprsd
 
       - name: Deploy RSS feed
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e # v4.0.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
