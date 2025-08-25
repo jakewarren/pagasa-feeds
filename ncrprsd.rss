@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version="2.0">
+  <channel>
+    <title>PAGASA NCRPRSD Advisories</title>
+    <link>https://www.pagasa.dost.gov.ph/regional-forecast/ncrprsd</link>
+    <description>Aggregated rainfall, thunderstorm, and special forecasts from PAGASA NCRPRSD</description>
+    <lastBuildDate>Mon, 25 Aug 2025 16:01:01 +0000</lastBuildDate>
+    <item>
+      <title>Rainfall Advisory No. 1 #NCRPRSD</title>
+      <description><![CDATA[Rainfall Advisory No. 1 #NCR_PRSD<br /> Weather System: Low Pressure Area (LPA)<br /> Issued at: 10:15 PM, 25 August 2025(Monday)<br /> <br /> Light to moderate with occasional heavy rains are expected over Tarlac.<br /> <br /> Light to moderate with occasional heavy rains affecting Metro Manila, Rizal, Bulacan, Quezon, Laguna, Batangas, Cavite, Nueva Ecija, Bataan, Pampanga and Zambales(San Antonio, Castillejos, Subic, Olongapo, San Marcelino, San Narciso, San Felipe) and may affect nearby areas.<br /> <br /> The public and the Disaster Risk Reduction and Management Offices concerned are advised to MONITOR the weather condition and watch for the next warning to be issued at 2:00 AM tomorrow.<br /> For more information and queries, please call telephone numbers 8927-1335 and 8927-2877 or log on to www.pagasa.dost.gov.ph.]]></description>
+      <category>Rainfall Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory #NCRPRSD</title>
+      <description><![CDATA[As of today, there is no Thunderstorm Advisory Issued.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Special Forecast: SPECIAL FORECAST FOR TAAL VOLCANO</title>
+      <link>http://src.panahon.gov.ph/pubfiles/prsd/national-capital-region/special_forecast.pdf</link>
+      <description><![CDATA[SPECIAL FORECAST FOR TAAL VOLCANO]]></description>
+      <category>Special Forecast</category>
+    </item>
+  </channel>
+</rss>
