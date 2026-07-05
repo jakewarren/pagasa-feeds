@@ -70,29 +70,43 @@ def add_items(soup, channel, div_id, category, slug):
         for entry in div.find_all("div"):
             html = entry.decode_contents()
             html = normalize_html(html)
-            
+
             if not html.strip():
                 continue
-            
-            # Extract advisory number with improved regex
-            match = re.search(r'(?:No|Number)\.?\s*(\d+)', html, re.IGNORECASE)
+
+            # A single section can mix advisory types. The "thunderstorms"
+            # div, for example, holds both numbered "Thunderstorm Advisory"
+            # entries and un-numbered "Thunderstorm Watch" entries, so we
+            # derive the type from each entry's own heading rather than
+            # assuming it matches the section-level category.
+            heading = re.split(r'<br\s*/?>', html, maxsplit=1)[0]
+            heading_text = re.sub(r'\s+', ' ', unescape(heading)).strip()
+
+            entry_category = category
+            if re.search(r'\bWatch\b', heading_text, re.IGNORECASE):
+                entry_category = re.sub(
+                    r'Advisory', 'Watch', category, flags=re.IGNORECASE
+                )
+
+            # Extract advisory number from the heading with improved regex
+            match = re.search(r'(?:No|Number)\.?\s*(\d+)', heading_text, re.IGNORECASE)
             number = match.group(1) if match else None
-            
+
             # Create title with proper formatting
             if number:
-                title = f"{category} No. {number} #{slug.upper()}"
+                title = f"{entry_category} No. {number} #{slug.upper()}"
             else:
-                title = f"{category} #{slug.upper()}"
-            
+                title = f"{entry_category} #{slug.upper()}"
+
             # Create RSS item
             item = ET.SubElement(channel, "item")
             ET.SubElement(item, "title").text = title
-            
+
             html = unescape(html)
             desc = ET.SubElement(item, "description")
             desc.text = ET.CDATA(html)
-                
-            ET.SubElement(item, "category").text = category
+
+            ET.SubElement(item, "category").text = entry_category
 
 
 def main(slug: str) -> None:
