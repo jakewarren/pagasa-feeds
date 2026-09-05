@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version="2.0">
+  <channel>
+    <title>PAGASA VISPRSD Advisories</title>
+    <link>https://www.pagasa.dost.gov.ph/regional-forecast/visprsd</link>
+    <description>Aggregated rainfall, thunderstorm, and special forecasts from PAGASA VISPRSD</description>
+    <lastBuildDate>Sat, 05 Sep 2026 21:00:34 +0000</lastBuildDate>
+    <item>
+      <title>Rainfall Advisory No. 4 #VISPRSD</title>
+      <description><![CDATA[Heavy Rainfall Warning No. 4 #VISPRSD<br /> Weather System: Southwest Monsoon (Habagat) <br /> Issued at 05:00 AM 06 September 2026<br /> <br /> Yellow Warning: #OccidentalMindoro(Lubang, Looc, Paluan, AbraDeIlog and Mamburao)<br /> Associated Hazard: FLOODING IS POSSIBLE in low-lying areas and LANDSLIDES in mountainous areas.<br /> <br /> Meanwhile, Light to Moderate with occasionally Heavy rains are expected over #OccidentalMindoro(SantaCruz, Sablayan, Calintaan, Rizal, SanJose and Magsaysay) within the next 30 minutes to an hour.<br /> <br /> The public and the Disaster Risk Reduction and Management Offices concerned are advised to MONITOR the weather condition and watch for the next warning to be issued at 08:00 AM Today.]]></description>
+      <category>Rainfall Advisory</category>
+    </item>
+    <item>
+      <title>Rainfall Advisory No. 3 #VISPRSD</title>
+      <description><![CDATA[Heavy Rainfall Warning No. 3 #VISPRSD<br /> Weather System: Southwest Monsoon (Habagat) <br /> Issued at 02:00 AM 06 September 2026<br /> <br /> Yellow Warning: #Palawan(Araceli, Dumaran, Taytay, ElNido and Linapacan)<br /> Associated Hazard: FLOODING IS POSSIBLE in low-lying areas and LANDSLIDES in mountainous areas.<br /> <br /> Meanwhile, Light to Moderate with occasionally Heavy rains are expected over #Palawan(Busuanga, Culion and PuertoPrincesaCity) within the next 30 minutes to an hour.<br /> <br /> The above conditions are being experienced in #OccidentalMindoro, #Palawan(Coron, SanVicente, Roxas, Magsaysay, Cuyo and Agutaya) which may persist within 2 to 3 hours and may affect nearby areas.<br /> <br /> The public and the Disaster Risk Reduction and Management Offices concerned are advised to MONITOR the weather condition and watch for the next warning to be issued at 05:00 AM Today.]]></description>
+      <category>Rainfall Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory No. 5 #VISPRSD</title>
+      <description><![CDATA[Thunderstorm Advisory No. 5 #VISPRSD<br /> Issued at 04:27 AM 06 September 2026<br /> <br /> Moderate to Heavy rainshowers with lightning and strong winds are expected over #Samar(Matuguinao) and #NegrosOriental(Basay) within the next 30 minutes to an hour.<br /> <br /> The above conditions are being experienced in #Samar(Gandara, SanJorge), #NegrosOccidental(HinobaAn, Candoni) and #NegrosOriental(CityOfBayawan) which may persist within 1 to 2 hours and may affect nearby areas.<br /> <br /> All are advised to take precautionary measures against the impacts associated with these hazards which include flash floods and landslides. Keep monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory No. 4 #VISPRSD</title>
+      <description><![CDATA[Thunderstorm Advisory No. 4 #VISPRSD<br /> Issued at 03:00 AM 06 September 2026<br /> <br /> Moderate to Heavy rainshowers with lightning and strong winds are expected over #Samar(Almagro, SantoNiño), #Biliran(Maripipi), #NegrosOriental(Bindoy, Tayasan, CityOfGuihulngan) and #NegrosOccidental(MoisesPadilla) within the next 30 minutes to an hour.<br /> <br /> The above conditions are being experienced in #NegrosOccidental(CityOfSipalay, Cauayan, Ilog, CityOfKabankalan, Isabela), #NegrosOriental(Mabinay and Ayungon) which may persist within 1 to 2 hours and may affect nearby areas.<br /> <br /> All are advised to take precautionary measures against the impacts associated with these hazards which include flash floods and landslides. Keep monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory No. 3 #VISPRSD</title>
+      <description><![CDATA[Thunderstorm Advisory No. 3 #VISPRSD<br /> Issued at 02:02 AM 06 September 2026<br /> <br /> Moderate to Heavy rainshowers with lightning and strong winds are expected over #NegrosOriental(Basay, BaisCity, CityOfTanjay, SantaCatalina and Pamplona) within the next 30 minutes to an hour.<br /> <br /> The above conditions are being experienced in #NegrosOccidental(Candoni, HinobaAn) and #NegrosOriental(CityOfBayawan) which may persist within 1 to 2 hours and may affect nearby areas.<br /> <br /> All are advised to take precautionary measures against the impacts associated with these hazards which include flash floods and landslides. Keep monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory #VISPRSD</title>
+      <description><![CDATA[Thunderstorm Watch #VISPRSD<br /> Issued at 10:00 PM 05 September 2026<br /> <br /> Thunderstorm is MORE LIKELY to develop over #OccidentalMindoro, #Palawan, #Iloilo, #Guimaras, #Antique, #Capiz, #Aklan, #NegrosOccidental, #NegrosOriental, #Cebu, #Bohol, #Siquijor, #Leyte, #SouthernLeyte, #Biliran, #EasternSamar and #Samar within 12 hours.<br /> <br /> All are advised to continue monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Special Forecast: Mt. KanlaonIssued at: 04:55 AM, 6 September, 2026Valid until: 04:55 AM, 7 September, 2026</title>
+      <link>https://d3l5rdm090s0mj.cloudfront.net/public-files/prsd-cms/visayas/special-forecasts/SWF_KANLAON_NegOcc_09062026_1788641723.pdf</link>
+      <description><![CDATA[Issued at: 04:55 AM, 6 September, 2026<br />Valid until: 04:55 AM, 7 September, 2026]]></description>
+      <category>Special Forecast</category>
+    </item>
+    <item>
+      <title>Special Forecast: 27th Minuluan Festival, Talisay, Negros OccidentalIssued at: 05:00 AM, 5 September, 2026Valid until: 05:00 AM, 6 September, 2026</title>
+      <link>https://d3l5rdm090s0mj.cloudfront.net/public-files/prsd-cms/visayas/special-forecasts/SWF_TALISAY_NegOcc_27thMinuluan_Festival_09052026_1788555244.pdf</link>
+      <description><![CDATA[Issued at: 05:00 AM, 5 September, 2026<br />Valid until: 05:00 AM, 6 September, 2026]]></description>
+      <category>Special Forecast</category>
+    </item>
+    <item>
+      <title>Special Forecast: Cebu ProvinceIssued at: 05:00 AM, 5 September, 2026Valid until: 05:00 AM, 6 September, 2026</title>
+      <link>https://d3l5rdm090s0mj.cloudfront.net/public-files/prsd-cms/visayas/special-forecasts/SWF_CEBU_09052026_1788555217.pdf</link>
+      <description><![CDATA[Issued at: 05:00 AM, 5 September, 2026<br />Valid until: 05:00 AM, 6 September, 2026]]></description>
+      <category>Special Forecast</category>
+    </item>
+    <item>
+      <title>Special Forecast: Mt. KanlaonIssued at: 05:00 AM, 5 September, 2026Valid until: 05:00 AM, 6 September, 2026</title>
+      <link>https://d3l5rdm090s0mj.cloudfront.net/public-files/prsd-cms/visayas/special-forecasts/SWF_KANLAON_NegOcc_09052026_1788555202.pdf</link>
+      <description><![CDATA[Issued at: 05:00 AM, 5 September, 2026<br />Valid until: 05:00 AM, 6 September, 2026]]></description>
+      <category>Special Forecast</category>
+    </item>
+  </channel>
+</rss>

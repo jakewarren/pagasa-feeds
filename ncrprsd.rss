@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version="2.0">
+  <channel>
+    <title>PAGASA NCRPRSD Advisories</title>
+    <link>https://www.pagasa.dost.gov.ph/regional-forecast/ncrprsd</link>
+    <description>Aggregated rainfall, thunderstorm, and special forecasts from PAGASA NCRPRSD</description>
+    <lastBuildDate>Sat, 05 Sep 2026 21:00:36 +0000</lastBuildDate>
+    <item>
+      <title>Rainfall Advisory No. 19 #NCRPRSD</title>
+      <description><![CDATA[Heavy Rainfall Warning No. 19 #NCR_PRSD<br /> Weather System: Southwest Monsoon (Habagat)<br /> Issued at: 2:00 AM, 06 September 2026(Sunday)<br /> <br /> YELLOW WARNING LEVEL: Bataan and Zambales(Botolan, Cabangan, San Felipe, San Narciso, San Antonio, San Marcelino, Castillejos, Subic, Olongapo, Iba, Palauig).<br /> ASSOCIATED HAZARD: FLOODING in flood-prone areas.<br /> <br /> <br /> Meanwhile, expect light to moderate with occasional heavy rains over Nueva Ecija, Laguna(Calamba, Cabuyao, Santa Rosa, Binan, San Pedro, Mabitac, Santa Maria, Pakil, Siniloan, Famy, Pangil, Paete, Kalayaan, Lumban, Los Banos, Cavinti) and Quezon(Sariaya, San Andres, Mulanay, San Francisco, San Narciso, Catanauan, General Luna, Buenavista, Polillo, Patnanungan, Jomalig, Infanta, General Nakar, Real, Mauban, Pagbilao, Lucena, Tayabas, Lucban, Sampaloc, Atimonan, Candelaria) within the next 3 hours.<br /> Light to moderate with occasional heavy rains affecting Metro Manila, Zambales(Candelaria, Masinloc, Santa Cruz), Tarlac(Capas, Bamban), Pampanga(Mabalacat, Porac, Floridablanca, Lubao, Santa Rita, Guagua, Angeles, Masantol, Macabebe, Sasmuan), Bulacan(Hagonoy, Paombong, Malolos), Cavite(Bacoor, Imus, Kawit, Noveleta, Cavite City), Batangas(Calatagan, Lian, Balayan, Calaca, Lemery, Mabini, Bauan, San Luis, Tingloy, San Nicolas, Taal, Santa Teresita, Alitagtag, San Pascual) and Rizal(Morong, Binangonan, Teresa, Angono, Taytay, Cainta, Cardona) which may persist within 3 hours and may affect nearby areas.<br /> The public and the Disaster Risk Reduction and Management Offices concerned are advised to MONITOR the weather condition and watch for the next warning to be issued at 5:00 AM today.<br /> For more information and queries, please call telephone numbers 8927-1335 and 8927-2877 or log on to www.pagasa.dost.gov.ph.]]></description>
+      <category>Rainfall Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory #NCRPRSD</title>
+      <description><![CDATA[As of today, there is no Thunderstorm Advisory Issued.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Special Forecast: SPECIAL FORECAST FOR TAAL VOLCANO</title>
+      <link>http://src.panahon.gov.ph/pubfiles/prsd/national-capital-region/special_forecast.pdf</link>
+      <description><![CDATA[SPECIAL FORECAST FOR TAAL VOLCANO]]></description>
+      <category>Special Forecast</category>
+    </item>
+  </channel>
+</rss>
