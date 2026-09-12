@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version="2.0">
+  <channel>
+    <title>PAGASA VISPRSD Advisories</title>
+    <link>https://www.pagasa.dost.gov.ph/regional-forecast/visprsd</link>
+    <description>Aggregated rainfall, thunderstorm, and special forecasts from PAGASA VISPRSD</description>
+    <lastBuildDate>Sat, 12 Sep 2026 20:00:49 +0000</lastBuildDate>
+    <item>
+      <title>Rainfall Advisory #VISPRSD</title>
+      <description><![CDATA[As of today, there is no Heavy Rainfall Warning Issued.]]></description>
+      <category>Rainfall Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory No. 1 #VISPRSD</title>
+      <description><![CDATA[Thunderstorm Advisory No. 1 #VISPRSD<br /> Issued at 01:53 AM 13 September 2026<br /> <br /> Moderate to Heavy rainshowers with lightning and strong winds are expected over #Bohol(Alicia, Pres.CarlosP.Garcia, Duero, Danao, Dagohoy, Pilar, Talibon), #SouthernLeyte(CityOfMaasin, Macrohon) and #Leyte(Matalom) within the next 30 minutes to an hour.<br /> <br /> The above conditions are being experienced in #Cebu(Tudela, Poro), #Bohol(Trinidad, SanMiguel, BienUnido, Ubay, Mabini, Candijay and Anda) which may persist within 1 to 2 hours and may affect nearby areas.<br /> <br /> All are advised to take precautionary measures against the impacts associated with these hazards which include flash floods and landslides. Keep monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory #VISPRSD</title>
+      <description><![CDATA[Thunderstorm Watch #VISPRSD<br /> Issued at 10:00 PM 12 September 2026<br /> <br /> Thunderstorm is MORE LIKELY to develop over #OccidentalMindoro, #Palawan, #Iloilo, #Guimaras, #Antique, #Capiz, #Aklan, #NegrosOccidental, #NegrosOriental, #Cebu, #Bohol, #Siquijor, #Leyte, #SouthernLeyte, #Biliran, #EasternSamar and #Samar within 12 hours.<br /> <br /> All are advised to continue monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+  </channel>
+</rss>

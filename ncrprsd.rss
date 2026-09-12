@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version="2.0">
+  <channel>
+    <title>PAGASA NCRPRSD Advisories</title>
+    <link>https://www.pagasa.dost.gov.ph/regional-forecast/ncrprsd</link>
+    <description>Aggregated rainfall, thunderstorm, and special forecasts from PAGASA NCRPRSD</description>
+    <lastBuildDate>Sat, 12 Sep 2026 20:00:51 +0000</lastBuildDate>
+    <item>
+      <title>Rainfall Advisory #NCRPRSD</title>
+      <description><![CDATA[As of today, there is no Heavy Rainfall Warning Issued.]]></description>
+      <category>Rainfall Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory No. 7 #NCRPRSD</title>
+      <description><![CDATA[Thunderstorm Advisory No. 7 #NCR_PRSD<br /> Issued at: 1:33 AM, 13 September 2026(Sunday)<br /> <br /> Moderate to heavy rainshowers with lightning and strong winds are expected over <strong>Bulacan (Dona Remedios Trinidad and Norzagaray), Quezon (Panukulan, Burdeos, and Infanta), and Rizal (Rodriguez and Tanay)</strong> within the next 2 hours.<br /> <br /> The above condition is affecting <strong>Quezon (General Nakar)</strong> which may persist within 2 hours.<br /> <br /> All are advised to take precautionary measures against the impacts associated with these hazards which include flash floods and landslides.<br /> <br /> Keep monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory #NCRPRSD</title>
+      <description><![CDATA[Thunderstorm Watch #NCR_PRSD<br /> Issued at: 10:00 PM, 12 September 2026<br /> <br /> Thunderstorm is MORE LIKELY to develop over Greater Metro Manila Area(Metro Manila, Bulacan, Rizal, Laguna and Cavite) within 12 hours. <br /> <br /> All are advised to continue monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Special Forecast: SPECIAL FORECAST FOR TAAL VOLCANO</title>
+      <link>http://src.panahon.gov.ph/pubfiles/prsd/national-capital-region/special_forecast.pdf</link>
+      <description><![CDATA[SPECIAL FORECAST FOR TAAL VOLCANO]]></description>
+      <category>Special Forecast</category>
+    </item>
+  </channel>
+</rss>
