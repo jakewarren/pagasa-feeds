@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version="2.0">
+  <channel>
+    <title>PAGASA NCRPRSD Advisories</title>
+    <link>https://www.pagasa.dost.gov.ph/regional-forecast/ncrprsd</link>
+    <description>Aggregated rainfall, thunderstorm, and special forecasts from PAGASA NCRPRSD</description>
+    <lastBuildDate>Wed, 16 Sep 2026 03:01:00 +0000</lastBuildDate>
+    <item>
+      <title>Rainfall Advisory #NCRPRSD</title>
+      <description><![CDATA[As of today, there is no Heavy Rainfall Warning Issued.]]></description>
+      <category>Rainfall Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory No. 3 #NCRPRSD</title>
+      <description><![CDATA[Thunderstorm Advisory No. 3 #NCR_PRSD<br /> Issued at: 8:55 AM, 16 September 2026(Wednesday)<br /> <br /> Moderate to heavy rainshowers with lightning and strong winds are expected over <strong>Bataan (Mariveles and Limay), Laguna (Lumban, Kalayaan, Paete, Pangil, Siniloan, Famy, Pakil, Mabitac, Pila, Magdalena, Luisiana, Majayjay, Liliw, Nagcarlan, Victoria, and Rizal), and Quezon (Real, General Nakar, Infanta, Mauban, Sampaloc, Perez, Alabat, Quezon, Tagkawayan, Guinayangan, Lopez, Lucban, Tayabas, Atimonan, Padre Burgos, Plaridel, Gumaca, Pitogo, Macalelon, Unisan, Agdangan, Pagbilao, Lucena, Candelaria, and Sariaya)</strong> within the next 2 hours.<br /> <br /> The above condition is affecting <strong>Laguna (Pagsanjan, Santa Cruz, and Cavinti) and Quezon (Calauag)</strong> which may persist within 2 hours.<br /> <br /> All are advised to take precautionary measures against the impacts associated with these hazards which include flash floods and landslides.<br /> <br /> Keep monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Special Forecast: SPECIAL FORECAST FOR TAAL VOLCANO</title>
+      <link>http://src.panahon.gov.ph/pubfiles/prsd/national-capital-region/special_forecast.pdf</link>
+      <description><![CDATA[SPECIAL FORECAST FOR TAAL VOLCANO]]></description>
+      <category>Special Forecast</category>
+    </item>
+  </channel>
+</rss>
