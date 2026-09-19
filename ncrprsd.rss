@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version="2.0">
+  <channel>
+    <title>PAGASA NCRPRSD Advisories</title>
+    <link>https://www.pagasa.dost.gov.ph/regional-forecast/ncrprsd</link>
+    <description>Aggregated rainfall, thunderstorm, and special forecasts from PAGASA NCRPRSD</description>
+    <lastBuildDate>Sat, 19 Sep 2026 20:00:53 +0000</lastBuildDate>
+    <item>
+      <title>Rainfall Advisory #NCRPRSD</title>
+      <description><![CDATA[As of today, there is no Heavy Rainfall Warning Issued.]]></description>
+      <category>Rainfall Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory #NCRPRSD</title>
+      <description><![CDATA[As of today, there is no Thunderstorm Advisory Issued.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Special Forecast: SPECIAL FORECAST FOR TAAL VOLCANO</title>
+      <link>http://src.panahon.gov.ph/pubfiles/prsd/national-capital-region/special_forecast.pdf</link>
+      <description><![CDATA[SPECIAL FORECAST FOR TAAL VOLCANO]]></description>
+      <category>Special Forecast</category>
+    </item>
+  </channel>
+</rss>

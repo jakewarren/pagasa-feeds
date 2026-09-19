@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version="2.0">
+  <channel>
+    <title>PAGASA VISPRSD Advisories</title>
+    <link>https://www.pagasa.dost.gov.ph/regional-forecast/visprsd</link>
+    <description>Aggregated rainfall, thunderstorm, and special forecasts from PAGASA VISPRSD</description>
+    <lastBuildDate>Sat, 19 Sep 2026 20:00:52 +0000</lastBuildDate>
+    <item>
+      <title>Rainfall Advisory #VISPRSD</title>
+      <description><![CDATA[As of today, there is no Heavy Rainfall Warning Issued.]]></description>
+      <category>Rainfall Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory No. 3 #VISPRSD</title>
+      <description><![CDATA[Thunderstorm Advisory No. 3 #VISPRSD<br /> Issued at 03:07 AM 20 September 2026<br /> <br /> Moderate to Heavy rainshowers with lightning and strong winds are expected over #Leyte(CityOfBaybay, Inopacan, Hindang, Hilongos, Matalom, Bato), #SouthernLeyte(Bontoc, TomasOppus and CityOfMaasin) within the next 30 minutes to an hour.<br /> <br /> All are advised to take precautionary measures against the impacts associated with these hazards which include flash floods and landslides. Keep monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory No. 2 #VISPRSD</title>
+      <description><![CDATA[Thunderstorm Advisory No. 2 #VISPRSD<br /> Issued at 02:25 AM 20 September 2026<br /> <br /> Moderate to Heavy rainshowers with lightning and strong winds are expected over #Leyte(Tabango, Villaba), #Biliran(Caibiran, Cabucgayan, Biliran, Culaba), #Samar(Pinabacdao, Villareal, Talalora and Calbiga) within the next 30 minutes to an hour.<br /> <br /> The above conditions are being experienced in #Biliran(Almeria, Naval), #Samar(Daram and Zumarraga) which may persist within 1 to 2 hours and may affect nearby areas.<br /> <br /> All are advised to take precautionary measures against the impacts associated with these hazards which include flash floods and landslides. Keep monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory No. 1 #VISPRSD</title>
+      <description><![CDATA[Thunderstorm Advisory No. 1 #VISPRSD<br /> Issued at 01:00 AM 20 September 2026<br /> <br /> Moderate to Heavy rainshowers with lightning and strong winds are expected over #Bohol(Pres.CarlosP.Garcia, Ubay, Getafe), #Leyte(Hilongos, Hindang, Bato, Matalom) and #SouthernLeyte(CityOfMaasin) within the next 30 minutes to an hour.<br /> <br /> The above conditions are being experienced in #Bohol(BienUnido and Talibon) which may persist within 1 to 2 hours and may affect nearby areas.<br /> <br /> All are advised to take precautionary measures against the impacts associated with these hazards which include flash floods and landslides. Keep monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory #VISPRSD</title>
+      <description><![CDATA[Thunderstorm Watch #VISPRSD<br /> Issued at 10:00 PM 19 September 2026<br /> <br /> Thunderstorm is MORE LIKELY to develop over #OccidentalMindoro, #Palawan, #Iloilo, #Guimaras, #Antique, #Capiz, #Aklan, #NegrosOccidental, #NegrosOriental, #Cebu, #Bohol, #Siquijor, #Leyte, #SouthernLeyte, #Biliran, #EasternSamar and #Samar within 12 hours.<br /> <br /> All are advised to continue monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Special Forecast: Mt. KanlaonIssued at: 05:00 AM, 19 September, 2026Valid until: 05:00 AM, 20 September, 2026</title>
+      <link>https://d3l5rdm090s0mj.cloudfront.net/public-files/prsd-cms/visayas/special-forecasts/SWF_KANLAON_NegOcc_09192026_1789764499.pdf</link>
+      <description><![CDATA[Issued at: 05:00 AM, 19 September, 2026<br />Valid until: 05:00 AM, 20 September, 2026]]></description>
+      <category>Special Forecast</category>
+    </item>
+  </channel>
+</rss>
