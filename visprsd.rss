@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version="2.0">
+  <channel>
+    <title>PAGASA VISPRSD Advisories</title>
+    <link>https://www.pagasa.dost.gov.ph/regional-forecast/visprsd</link>
+    <description>Aggregated rainfall, thunderstorm, and special forecasts from PAGASA VISPRSD</description>
+    <lastBuildDate>Sat, 26 Sep 2026 20:00:45 +0000</lastBuildDate>
+    <item>
+      <title>Rainfall Advisory #VISPRSD</title>
+      <description><![CDATA[As of today, there is no Heavy Rainfall Warning Issued.]]></description>
+      <category>Rainfall Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory No. 2 #VISPRSD</title>
+      <description><![CDATA[Thunderstorm Advisory No. 2 #VISPRSD<br /> Issued at 03:10 AM 27 September 2026<br /> <br /> Moderate to Heavy rainshowers with lightning and strong winds are expected over #SouthernLeyte(Limasawa, SanFrancisco, Pintuyan, Liloan, SanRicardo), #Cebu(Bantayan, SantaFe and Madridejos) within the next 30 minutes to an hour.<br /> <br /> The above conditions are being experienced in #SouthernLeyte(Macrohon and PadreBurgos) which may persist within 1 to 2 hours and may affect nearby areas.<br /> <br /> All are advised to take precautionary measures against the impacts associated with these hazards which include flash floods and landslides. Keep monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory No. 1 #VISPRSD</title>
+      <description><![CDATA[Thunderstorm Advisory No. 1 #VISPRSD<br /> Issued at 01:53 AM 27 September 2026<br /> <br /> Moderate to Heavy rainshowers with lightning and strong winds are expected over #Samar(Tarangnan, CityOfCatbalogan, Daram, Zumarraga), #Leyte(Albuera and OrmocCity) within the next 30 minutes to an hour.<br /> <br /> The above conditions are being experienced in #Samar(SantoNiño) and #Leyte(Merida) which may persist within 1 to 2 hours and may affect nearby areas.<br /> <br /> All are advised to take precautionary measures against the impacts associated with these hazards which include flash floods and landslides. Keep monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory #VISPRSD</title>
+      <description><![CDATA[Thunderstorm Watch #VISPRSD<br /> Issued at 10:00 PM 26 September 2026<br /> <br /> Thunderstorm is MORE LIKELY to develop over #OccidentalMindoro, #Palawan, #Iloilo, #Guimaras, #Antique, #Capiz, #Aklan, #NegrosOccidental, #NegrosOriental, #Cebu, #Bohol, #Siquijor, #Leyte, #SouthernLeyte, #Biliran, #EasternSamar and #Samar within 12 hours.<br /> <br /> All are advised to continue monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Special Forecast: Mt. KanlaonIssued at: 05:00 AM, 26 September, 2026Valid until: 05:00 AM, 27 September, 2026</title>
+      <link>https://d3l5rdm090s0mj.cloudfront.net/public-files/prsd-cms/visayas/special-forecasts/SWF_KANLAON_NegOcc_09262026_1790368745.pdf</link>
+      <description><![CDATA[Issued at: 05:00 AM, 26 September, 2026<br />Valid until: 05:00 AM, 27 September, 2026]]></description>
+      <category>Special Forecast</category>
+    </item>
+  </channel>
+</rss>
