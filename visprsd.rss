@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version="2.0">
+  <channel>
+    <title>PAGASA VISPRSD Advisories</title>
+    <link>https://www.pagasa.dost.gov.ph/regional-forecast/visprsd</link>
+    <description>Aggregated rainfall, thunderstorm, and special forecasts from PAGASA VISPRSD</description>
+    <lastBuildDate>Sat, 03 Oct 2026 16:10:15 +0000</lastBuildDate>
+    <item>
+      <title>Rainfall Advisory #VISPRSD</title>
+      <description><![CDATA[As of today, there is no Heavy Rainfall Warning Issued.]]></description>
+      <category>Rainfall Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory No. 16 #VISPRSD</title>
+      <description><![CDATA[Thunderstorm Advisory No. 16 #VISPRSD<br /> Issued at 11:11 PM 03 October 2026<br /> <br /> Moderate to Heavy rainshowers with lightning and strong winds are expected over #Leyte(Burauen, Javier, Mahaplag, SanIsidro, Tabango), #SouthernLeyte(Sogod, Bontoc, TomasOppus, Malitbog and Macrohon) within the next 30 minutes to an hour.<br /> <br /> The above conditions are being experienced in #Leyte(OrmocCity, Albuera, CityOfBaybay, Matalom, Bato, Hilongos, Hindang, Inopacan), #SouthernLeyte(CityOfMaasin), #Samar(Daram and Zumarraga) which may persist within 1 to 2 hours and may affect nearby areas.<br /> <br /> All are advised to take precautionary measures against the impacts associated with these hazards which include flash floods and landslides. Keep monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory #VISPRSD</title>
+      <description><![CDATA[Thunderstorm Watch #VISPRSD<br /> Issued at 10:00 PM 03 October 2026<br /> <br /> Thunderstorm is MORE LIKELY to develop over #OccidentalMindoro, #Palawan, #Iloilo, #Guimaras, #Antique, #Capiz, #Aklan, #NegrosOccidental, #NegrosOriental, #Cebu, #Bohol, #Siquijor, #Leyte, #SouthernLeyte, #Biliran, #EasternSamar and #Samar within 12 hours.<br /> <br /> All are advised to continue monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory No. 15 #VISPRSD</title>
+      <description><![CDATA[Thunderstorm Advisory No. 15 #VISPRSD<br /> Issued at 09:31 PM 03 October 2026<br /> <br /> Moderate to Heavy rainshowers with lightning and strong winds are expected over #Bohol(BienUnido, Buenavista, Trinidad, Ubay) and #NegrosOccidental(Cauayan) within the next 30 minutes to an hour.<br /> <br /> The above conditions are being experienced in #Bohol(Getafe, Talibon), #Leyte(Isabel), #Antique(TobiasFornier and Hamtic) which may persist within 1 to 2 hours and may affect nearby areas.<br /> <br /> All are advised to take precautionary measures against the impacts associated with these hazards which include flash floods and landslides. Keep monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Special Forecast: Negros OrientalIssued at: 05:00 AM, 3 October, 2026Valid until: 05:00 AM, 4 October, 2026</title>
+      <link>https://d3l5rdm090s0mj.cloudfront.net/public-files/prsd-cms/visayas/special-forecasts/SWF_Neg_Or_HeatIndex_10032026_1790974095.pdf</link>
+      <description><![CDATA[Issued at: 05:00 AM, 3 October, 2026<br />Valid until: 05:00 AM, 4 October, 2026]]></description>
+      <category>Special Forecast</category>
+    </item>
+    <item>
+      <title>Special Forecast: Kalibo, AklanIssued at: 05:00 AM, 3 October, 2026Valid until: 05:00 AM, 4 October, 2026</title>
+      <link>https://d3l5rdm090s0mj.cloudfront.net/public-files/prsd-cms/visayas/special-forecasts/SWF_KALIBO_10032026_1790974071.pdf</link>
+      <description><![CDATA[Issued at: 05:00 AM, 3 October, 2026<br />Valid until: 05:00 AM, 4 October, 2026]]></description>
+      <category>Special Forecast</category>
+    </item>
+    <item>
+      <title>Special Forecast: Mt. KanlaonIssued at: 05:00 AM, 3 October, 2026Valid until: 05:00 AM, 4 October, 2026</title>
+      <link>https://d3l5rdm090s0mj.cloudfront.net/public-files/prsd-cms/visayas/special-forecasts/SWF_KANLAON_NegOcc_10032026_1790974043.pdf</link>
+      <description><![CDATA[Issued at: 05:00 AM, 3 October, 2026<br />Valid until: 05:00 AM, 4 October, 2026]]></description>
+      <category>Special Forecast</category>
+    </item>
+  </channel>
+</rss>
