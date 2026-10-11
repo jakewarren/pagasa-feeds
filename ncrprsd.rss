@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version="2.0">
+  <channel>
+    <title>PAGASA NCRPRSD Advisories</title>
+    <link>https://www.pagasa.dost.gov.ph/regional-forecast/ncrprsd</link>
+    <description>Aggregated rainfall, thunderstorm, and special forecasts from PAGASA NCRPRSD</description>
+    <lastBuildDate>Sun, 11 Oct 2026 04:03:13 +0000</lastBuildDate>
+    <item>
+      <title>Rainfall Advisory No. 3 #NCRPRSD</title>
+      <description><![CDATA[Rainfall Advisory No. 3 #NCR_PRSD<br /> Weather System: Easterlies<br /> Issued at: 11:00 AM, 11 October 2026(Sunday)<br /> <br /> Light to moderate rains are expected over Bulacan(Angat, Balagtas, Baliuag, Bustos, San Jose del Monte, Dona Remedios Trinidad, Guiguinto, Norzagaray, Pandi, Plaridel, Pulilan, San Ildefonso, San Miguel, San Rafael, Santa Maria, Bocaue, Marilao, Meycauayan), Laguna(Bay, Calauan, Liliw, Luisiana, Magdalena, Majayjay, Nagcarlan, Pagsanjan, Pila, Rizal, San Pablo, Santa Cruz, Victoria, Cavinti, Famy, Kalayaan, Lumban, Mabitac, Paete, Pakil, Pangil, Santa Maria, Siniloan, Los Banos, Alaminos), Nueva Ecija(Gapan, Gabaldon, Laur, Bongabon, Pantabangan, Carranglan, San Jose, Rizal, General Mamerto Natividad, Palayan, General Tinio, Penaranda) and Metro Manila(Valenzuela, Quezon City, Malabon, Caloocan, Marikina, San Juan, Pasig).<br /> <br /> Light to moderate rains affecting Quezon(General Nakar, Real, Infanta, Polillo, Panukulan, Quezon, Alabat, Mauban, Perez) and Rizal(Tanay) and may affect nearby areas.<br /> <br /> The public and the Disaster Risk Reduction and Management Offices concerned are advised to MONITOR the weather condition and watch for the next warning to be issued at 2:00 PM today.<br /> For more information and queries, please call telephone numbers 8927-1335 and 8927-2877 or log on to www.pagasa.dost.gov.ph.]]></description>
+      <category>Rainfall Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory #NCRPRSD</title>
+      <description><![CDATA[As of today, there is no Thunderstorm Advisory Issued.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Special Forecast: SPECIAL FORECAST FOR TAAL VOLCANO</title>
+      <link>http://src.panahon.gov.ph/pubfiles/prsd/national-capital-region/special_forecast.pdf</link>
+      <description><![CDATA[SPECIAL FORECAST FOR TAAL VOLCANO]]></description>
+      <category>Special Forecast</category>
+    </item>
+  </channel>
+</rss>
