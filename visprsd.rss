@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version="2.0">
+  <channel>
+    <title>PAGASA VISPRSD Advisories</title>
+    <link>https://www.pagasa.dost.gov.ph/regional-forecast/visprsd</link>
+    <description>Aggregated rainfall, thunderstorm, and special forecasts from PAGASA VISPRSD</description>
+    <lastBuildDate>Sat, 31 Oct 2026 19:00:42 +0000</lastBuildDate>
+    <item>
+      <title>Rainfall Advisory #VISPRSD</title>
+      <description><![CDATA[As of today, there is no Heavy Rainfall Warning Issued.]]></description>
+      <category>Rainfall Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory No. 2 #VISPRSD</title>
+      <description><![CDATA[Thunderstorm Advisory No. 2 #VISPRSD<br /> Issued at 12:56 AM 01 November 2026<br /> <br /> Moderate to Heavy rainshowers with lightning and strong winds are expected over #Cebu(CebuCity) within the next 30 minutes to an hour.<br /> <br /> The above conditions are being experienced in #Cebu(DanaoCity, Compostela, Liloan, Consolacion and MandaueCity) which may persist within 1 to 2 hours and may affect nearby areas.<br /> <br /> All are advised to take precautionary measures against the impacts associated with these hazards which include flash floods and landslides. Keep monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory No. 1 #VISPRSD</title>
+      <description><![CDATA[Thunderstorm Advisory No. 1 #VISPRSD<br /> Issued at 12:14 AM 01 November 2026<br /> <br /> Moderate to Heavy rainshowers with lightning and strong winds are expected over #OrientalMindoro(Bulalacao, Mansalay, Bongabong, Roxas, SanTeodoro, PuertoGalera, Baco, CityOfCalapan), #OccidentalMindoro(Paluan, AbraDeIlog, Mamburao, SantaCruz), #Palawan(Culion, Dumaran, Taytay, PuertoPrincesaCity, Balabac), #Cebu(Cordova), #NegrosOriental(Valencia, DumagueteCity), #EasternSamar(SanPolicarpo, Arteche, Jipapad, Oras and Dolores) within the next 30 minutes to an hour.<br /> <br /> The above conditions are being experienced in #Siquijor, #NegrosOriental(Zamboanguita, Dauin, Bacong, CityOfGuihulngan) and #Cebu(LapuLapuCity) which may persist within 1 to 2 hours and may affect nearby areas.<br /> <br /> All are advised to take precautionary measures against the impacts associated with these hazards which include flash floods and landslides. Keep monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory #VISPRSD</title>
+      <description><![CDATA[Thunderstorm Watch #VISPRSD<br /> Issued at 10:00 PM 31 October 2026<br /> <br /> Thunderstorm is MORE LIKELY to develop over #OccidentalMindoro, #Palawan, #Iloilo, #Guimaras, #Antique, #Capiz, #Aklan, #NegrosOccidental, #NegrosOriental, #Cebu, #Bohol, #Siquijor, #Leyte, #SouthernLeyte, #Biliran, #EasternSamar and #Samar within 12 hours.<br /> <br /> All are advised to continue monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Special Forecast: Bago, Negros OccidentalIssued at: 05:00 AM, 31 October, 2026Valid until: 05:00 AM, 1 November, 2026</title>
+      <link>https://d3l5rdm090s0mj.cloudfront.net/public-files/prsd-cms/visayas/special-forecasts/SWF_Bago_NegOcc_10312026_1_1793393460.pdf</link>
+      <description><![CDATA[Issued at: 05:00 AM, 31 October, 2026<br />Valid until: 05:00 AM, 1 November, 2026]]></description>
+      <category>Special Forecast</category>
+    </item>
+    <item>
+      <title>Special Forecast: Bago, Negros OccidentalIssued at: 05:00 AM, 31 October, 2026Valid until: 05:00 AM, 1 November, 2026</title>
+      <link>https://d3l5rdm090s0mj.cloudfront.net/public-files/prsd-cms/visayas/special-forecasts/SWF_Bago_NegOcc_10312026_1793393168.pdf</link>
+      <description><![CDATA[Issued at: 05:00 AM, 31 October, 2026<br />Valid until: 05:00 AM, 1 November, 2026]]></description>
+      <category>Special Forecast</category>
+    </item>
+    <item>
+      <title>Special Forecast: Sipalay, Negros OccidentalIssued at: 05:00 AM, 31 October, 2026Valid until: 05:00 AM, 1 November, 2026</title>
+      <link>https://d3l5rdm090s0mj.cloudfront.net/public-files/prsd-cms/visayas/special-forecasts/SWF_Sipalay_NegOcc_10312026_1793393143.pdf</link>
+      <description><![CDATA[Issued at: 05:00 AM, 31 October, 2026<br />Valid until: 05:00 AM, 1 November, 2026]]></description>
+      <category>Special Forecast</category>
+    </item>
+    <item>
+      <title>Special Forecast: Negros Oriental Heat IndexIssued at: 05:00 AM, 31 October, 2026Valid until: 05:00 AM, 1 November, 2026</title>
+      <link>https://d3l5rdm090s0mj.cloudfront.net/public-files/prsd-cms/visayas/special-forecasts/SWF_Neg_Or_HeatIndex_10312026_1793393107.pdf</link>
+      <description><![CDATA[Issued at: 05:00 AM, 31 October, 2026<br />Valid until: 05:00 AM, 1 November, 2026]]></description>
+      <category>Special Forecast</category>
+    </item>
+    <item>
+      <title>Special Forecast: Mt. KanlaonIssued at: 05:00 AM, 31 October, 2026Valid until: 05:00 AM, 1 November, 2026</title>
+      <link>https://d3l5rdm090s0mj.cloudfront.net/public-files/prsd-cms/visayas/special-forecasts/SWF_KANLAON_NegOcc_10312026_1793393078.pdf</link>
+      <description><![CDATA[Issued at: 05:00 AM, 31 October, 2026<br />Valid until: 05:00 AM, 1 November, 2026]]></description>
+      <category>Special Forecast</category>
+    </item>
+  </channel>
+</rss>
