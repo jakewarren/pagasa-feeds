@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version="2.0">
+  <channel>
+    <title>PAGASA NCRPRSD Advisories</title>
+    <link>https://www.pagasa.dost.gov.ph/regional-forecast/ncrprsd</link>
+    <description>Aggregated rainfall, thunderstorm, and special forecasts from PAGASA NCRPRSD</description>
+    <lastBuildDate>Sat, 07 Nov 2026 14:00:34 +0000</lastBuildDate>
+    <item>
+      <title>Rainfall Advisory #NCRPRSD</title>
+      <description><![CDATA[As of today, there is no Heavy Rainfall Warning Issued.]]></description>
+      <category>Rainfall Advisory</category>
+    </item>
+    <item>
+      <title>Thunderstorm Advisory No. 7 #NCRPRSD</title>
+      <description><![CDATA[Thunderstorm Advisory No. 7 #NCR_PRSD<br /> Issued at: 9:00 PM, 07 November 2026(Saturday)<br /> <br /> Moderate to heavy rainshowers with lightning and strong winds are expected over Bulacan (Norzagaray and San Jose del Monte), Laguna (Pakil, Pangil, Siniloan, Famy, Santa Maria, Paete, Kalayaan, Lumban, Cavinti, Mabitac, Luisiana, and Majayjay), Quezon (Jomalig, Infanta, Real, Mauban, Alabat, Perez, Guinayangan, Calauag, Quezon, Sampaloc, and Lucban), and Rizal (Tanay, Rodriguez, Antipolo, Pililla, Jala-Jala, Baras, and San Mateo) within the next 2 hours.<br /> <br /> The above condition is affecting Quezon (General Nakar, Polillo, Burdeos, Panukulan, Patnanungan, and Tagkawayan) which may persist within 2 hours.<br /> <br /> All are advised to take precautionary measures against the impacts associated with these hazards which include flash floods and landslides.<br /> <br /> Keep monitoring for updates.]]></description>
+      <category>Thunderstorm Advisory</category>
+    </item>
+    <item>
+      <title>Special Forecast: SPECIAL FORECAST FOR TAAL VOLCANO</title>
+      <link>http://src.panahon.gov.ph/pubfiles/prsd/national-capital-region/special_forecast.pdf</link>
+      <description><![CDATA[SPECIAL FORECAST FOR TAAL VOLCANO]]></description>
+      <category>Special Forecast</category>
+    </item>
+  </channel>
+</rss>
